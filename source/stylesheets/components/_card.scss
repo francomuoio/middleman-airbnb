@@ -1,9 +1,9 @@
 .card {
-  height: 175px;
+  height: 600px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
-  color: $yellow;
+  color: white;
   position: relative;
   margin-top: 40px;
 }
@@ -23,8 +23,9 @@
 }
 .card-description {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  text-align: center;
+  bottom: 10%;
+
 }
 .card-description h2 {
   font-size: 24px;
