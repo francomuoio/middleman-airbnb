@@ -32,8 +32,13 @@
   border: 1px solid tranparent;
   border-radius: 5px;
   margin-bottom: 10px;
-  box-shadow: 0 0 15px #93a5d8;
-  min-height: 194px;
+  box-shadow: 0 0 15px $ladresse;
+  min-height: 210px;
+}
+
+.police-ccm {
+  font-size: 15px;
 }
 
 
+// #93a5d8
