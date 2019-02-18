@@ -7,10 +7,14 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Le Wagon - Middleman</title>
-    <link href="stylesheets/application-1557b6f8.css" rel="stylesheet" />
-    <script src="javascripts/application-93de88c9.js"></script>
+    <link href="stylesheets/application-35851f21.css" rel="stylesheet" />
+    <script src="javascripts/application-29ab81cb.js"></script>
     <link href="images/favicon-f15af148.png" rel="icon" type="image/png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="navbar-wagon">
@@ -23,7 +27,8 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
 
-    <a href="#formulaireancre" class="navbar-wagon-item navbar-wagon-link button-banner">Commander mon Kit L'Adresse</a>
+
+    <a href="#formulaireancre" class="button-banner navbar-wagon-item navbar-wagon-link"> Commander mon Kit L'Adresse </a>
 
     <!-- Profile picture with dropdown list -->
     <div class="navbar-wagon-item">
@@ -56,7 +61,7 @@
 
     <div class="banner-content">
       <h1>
-        La garantie des loyers impayés conçue pour des agents immobiliers
+        La garantie des loyers impayés <br>conçue pour des agents immobiliers
       </h1>
       <h3 class="margin">
         Cautioneo vous permet de louer plus facilement et rémunère l’ensemble de vos contacts
@@ -72,34 +77,79 @@ locataires
 <!--  <h3>Cautioneo vous permet de louer plus facilement et de monétiser l’ensemble de vos contacts locataires.</h3> -->
 </div>
 
-<div class="slider">
+
+<div class="row">
+  <section class="customer-logos slider">
+    <div class="slide">
+      <h3 class="titre-ville">L'Adresse Aussonne</h3>
+    </div>
+    <div class="slide">
+      <h3 class="titre-ville">L'Adresse Chatenay Malabry</h3>
+    </div>
+    <div class="slide">
+      <h3 class="titre-ville">L'Adresse Marguerittes</h3>
+    </div>
+    <div class="slide">
+      <h3 class="titre-ville">L'Adresse Montreuil</h3>
+    </div>
+    <div class="slide">
+      <h3 class="titre-ville">L'Adresse Sud Sainte Victoire</h3>
+    </div>
+    <div class="slide">
+      <h3 class="titre-ville">L'Adresse Toulouse</h3>
+    </div>
+    <div class="slide">
+      <h3 class="titre-ville">L'Adresse Castanet</h3>
+    </div>
+    <div class="slide">
+      <h3 class="titre-ville">L'Adresse Vitry</h3>
+    </div>
+  </section>
+</div>
+
+<!--
+  <section class="customer-logos slider">
+    <div class="slide"><img src="images/image1.png"></div>
+    <div class="slide"><img src="images/image2.png"></div>
+    <div class="slide"><img src="images/image3.png"></div>
+    <div class="slide"><img src="images/image4.png"></div>
+    <div class="slide"><img src="images/image5.png"></div>
+    <div class="slide"><img src="images/image6.png"></div>
+    <div class="slide"><img src="images/image7.png"></div>
+    <div class="slide"><img src="images/image8.png"></div>
+  </section>
+</div> -->
+
+
+
+<!-- <div class="slider">
   <div class="slide-track">
     <div class="slide">
-      <h1 class="titre-ville">L'adresse Aussonne</h1>
+      <h3 class="titre-ville">L'Adresse Aussonne</h3>
     </div>
     <div class="slide">
-      <h1 class="titre-ville">L'adresse Chatenay Malabry</h1>
+      <h3 class="titre-ville">L'Adresse Chatenay Malabry</h3>
     </div>
     <div class="slide">
-      <h1 class="titre-ville">L'adresse Marguerittes</h1>
+      <h3 class="titre-ville">L'Adresse Marguerittes</h3>
     </div>
     <div class="slide">
-      <h1 class="titre-ville">L'Adresse Montreuil</h1>
+      <h3 class="titre-ville">L'Adresse Montreuil</h3>
     </div>
     <div class="slide">
-      <h1 class="titre-ville">L'Adresse Sud Sainte Victoire</h1>
+      <h3 class="titre-ville">L'Adresse Sud Sainte Victoire</h3>
     </div>
     <div class="slide">
-      <h1 class="titre-ville">L'Adresse Toulouse</h1>
+      <h3 class="titre-ville">L'Adresse Toulouse</h3>
     </div>
     <div class="slide">
-      <h1 class="titre-ville">L'Adresse Castanet</h1>
+      <h3 class="titre-ville">L'Adresse Castanet</h3>
     </div>
     <div class="slide">
-      <h1 class="titre-ville">L'Adresse Vitry</h1>
+      <h3 class="titre-ville">L'Adresse Vitry</h3>
     </div>
   </div>
-</div>
+</div> -->
 
 
 
@@ -110,7 +160,7 @@ locataires
     </div>
     <div class="testimonial col-sm-5 col-offset-sm-1">
       <div class="testimonial-quote italic">
-        <h3>« Nous sommes très fiers de lancer ce nouveau partenariat avec Cautioneo. En positionnant une nouvelle fois nos clients au centre de nos démarches, nous avons à cœur de faciliter le droit au logement. »</h3>
+        <h3>« Nous sommes très fiers de lancer ce nouveau partenariat avec Cautioneo. <br> En positionnant une nouvelle fois nos clients au centre de nos démarches, nous avons à cœur de faciliter le droit au logement. »</h3>
       </div>
       <br>
       <div class="testionial-author">
@@ -131,7 +181,7 @@ locataires
 
     <div class="right col-sm-7">
       <div class="text-center margin-top-50">
-        <h3 class="padding-bottom-20">Une garantie <strong class="surlignement">Simple et Rapide </strong><br> pour un <strong class="surlignement">Chiffre d’Affaire </strong>Supplémentaire </h3>
+        <h3 class="padding-bottom-20">Une garantie <strong class="surlignement">Simple et Rapide</strong><br> pour un <strong class="surlignement">Chiffre d’Affaires</strong> Supplémentaire </h3>
         </div>
       <div class="row margin-0">
         <div class="card-ccm col-md-offset-1 col-md-4">
@@ -199,7 +249,7 @@ locataires
       </div>
        <div class="text-center margin-top-20">
           <p class="margin-bottom-20"></p>
-          <a href="#formulaireancre" class="button-banner" >Commander mon kit L'Adresse</a>
+          <a href="#formulaireancre" class="button-banner" >Commander mon Kit L'Adresse</a>
         </div>
     </div>
     <div class="left col-sm-5">
@@ -207,7 +257,7 @@ locataires
 <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://image-store.slidesharecdn.com/70b7628a-529e-4b33-ad75-a4261523571b-original.jpeg');">
 
   <div class="card-description">
-    <h2>"Grâce au professionnalisme et au conseil de Cautioneo nous pouvons enfin proposer aux propriétaires et aux locataires une solution de garantie. On y gagne tous !</h2>
+    <h2>"Grâce au professionnalisme et aux conseils de Cautioneo nous pouvons enfin proposer aux propriétaires et aux locataires une solution de garantie. On y gagne tous !</h2>
     <p>Lucile ARTERO – Directrice de l’Agence Marguerittes</p>
   </div>
   <!-- img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay"> -->
@@ -230,9 +280,9 @@ locataires
     <div class="explication-kit col-sm-5 col-offset-sm-1">
       <div class="text-center">
         <h3>
-          <strong>
-          Votre Kit L’Adresse
-          </strong>
+          Votre
+          <strong class="surlignement">
+          Kit L’Adresse</strong>
         </h3>
       </div>
       <br>
@@ -262,10 +312,13 @@ locataires
 
 
 <div class="row">
-  <h3 class="text-center margin-top-50"><strong>On parle de Cautioneo dans la presse</strong></h3>
+  <h3 class="text-center margin-top-50"><strong class="surlignement">On parle de Cautioneo</strong> dans la presse</h3>
   <div class="carroussel fond text-center margin-bottom-50">
     <div class="col-xs-offset-1 col-xs-2 ">
     <img src="images/businessimmo-f73e75e7.png" alt="" height="50px" style="margin-top: 40px;">
+    </div>
+        <div class="col-xs-2">
+    <img src="images/radio-immo-4a716319.jpg" alt="" height="100px" style="margin-top: 10px;">
     </div>
     <div class="col-xs-2">
     <img src="images/destination-immo-c0711ea0.jpg" alt="" height="120px" style="">
@@ -273,12 +326,11 @@ locataires
     <div class="col-xs-2">
     <img src="images/immomatin-b40736e2.png" alt="" height="50px" style="margin-top: 30px;">
     </div>
-    <div class="col-xs-2">
-    <img src="images/radio-immo-4a716319.jpg" alt="" height="100px" style="margin-top: 10px;">
-    </div>
     <div class="col-xs-2 ">
     <img src="images/capital-2aced9ee.jpg" alt="" height="130px" style="padding-left: 0!important; ">
     </div>
+
+
   </div>
 </div>
 <!--  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); width: 120px;
@@ -313,9 +365,9 @@ locataires
     <div id="mc_embed_signup">
       <form action="https://cautioneo.us20.list-manage.com/subscribe/post?u=be3ed8fa9d6580db70f6f72da&amp;id=97fd16e3cb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
-          <h2 class="text-center">
-            Commander Gratuitement mon Kit L’Adresse
-          </h2>
+          <h3 class="text-center ">
+            <strong class="surlignement">Commander Gratuitement</strong> mon Kit L’Adresse
+          </h3>
           <div class="col-sm-12">
             <div class="indicates-required"><span class="asterisk">*</span>indications requises</div>
             <div class="mc-field-group">
@@ -325,7 +377,9 @@ locataires
               <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
             </div>
           </div>
+
           <div class="col-sm-12">
+          <br>
           <h5>
             <strong>
               Collaborateur(s) désirant recevoir le mail d’invitation à l’Espace Location (tutoriels, vidéos…) :
@@ -448,14 +502,7 @@ locataires
     <div class="row">
 
       <div class="col-xs-12 col-sm-4 footer-title">
-        <div>
-          <h4><strong>Cautioneo</strong></h4>
-        </div>
-          <p>Euratechnologies</p>
-          <p>165 Avenue de Bretagne</p>
-          <p>59000 Lille</p>
-          <p><i class="fas fa-mobile-alt"></i>+33 (0)6 59 72 88 78</p>
-          <p><i class="fas fa-envelope"></i><a  style="color: white;" href="mailto:contact@peetaya.com" title="contact@peetaya.com"> contact@cautioneo.com</a></p>
+
       </div>
 
       <div class="col-xs-12 col-sm-4">
