@@ -6,67 +6,195 @@
 //   justify-content: center;
 // }
 
-@mixin white-gradient {
-  background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+// @mixin white-gradient {
+//   background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+// }
+
+// $animationSpeed: 40s;
+
+// // Animation
+// @keyframes scroll {
+//   0% { transform: translateX(0); }
+//   100% { transform: translateX(calc(-250px * 7))}
+// }
+
+
+// // Styling
+// .slider {
+//   background: white;
+//   // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+//   height: 100px;
+//   margin: auto;
+//   overflow:hidden;
+//   position: relative;
+
+
+//   &::before,
+//   &::after {
+//     @include white-gradient;
+//     content: "";
+//     height: 100px;
+//     position: absolute;
+//     width: 200px;
+//     z-index: 2;
+//   }
+
+//   &::after {
+//     right: 0;
+//     top: 0;
+//     transform: rotateZ(180deg);
+//   }
+
+//   &::before {
+//     left: 0;
+//     top: 0;
+//   }
+
+//   .slide-track {
+// animation: scroll $animationSpeed linear infinite;
+//     display: flex;
+//     width: calc(250px * 8);
+//   }
+
+//   .slide {
+//     height: 100px;
+//     width: 250px;
+
+//   }
+// }
+
+// .titre-ville {
+//   padding-top: 15px;
+//   color: #017E8C;
+//   font-size: 24px;
+//   text-align: center;
+
+// }
+
+/* Slider */
+.slick-slide {
+    margin: 0px 20px;
+    width: 100%;
 }
 
-$animationSpeed: 40s;
-
-// Animation
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-250px * 7))}
+.slick-slide img {
+    width: 100%;
 }
 
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
 
-// Styling
-.slider {
-  background: white;
-  // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-  height: 100px;
-  margin: auto;
-  overflow:hidden;
-  position: relative;
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
 
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
 
-  &::before,
-  &::after {
-    @include white-gradient;
-    content: "";
-    height: 100px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-  }
-
-  &::after {
-    right: 0;
+.slick-track
+{
+    position: relative;
     top: 0;
-    transform: rotateZ(180deg);
-  }
-
-  &::before {
     left: 0;
-    top: 0;
-  }
-
-  .slide-track {
-animation: scroll $animationSpeed linear infinite;
-    display: flex;
-    width: calc(250px * 8);
-  }
-
-  .slide {
-    height: 100px;
-    width: 250px;
-
-  }
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
 }
 
-.titre-ville {
-  padding-top: 15px;
-  color: #017E8C;
-  font-size: 24px;
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+.slide h3{
   text-align: center;
+  color: $ladresse;
+  font-size: 20px;
+  font-weight: 350!important;
+  min-width: 170px;
+}
 
+.slider {
+  width: 100%;
 }

@@ -44,7 +44,7 @@
 }
 .navbar-wagon-link:hover {
   color: #da552f;
-  text-decoration: none;
+  // text-decoration: none;
 }
 
 /* Dropdown menu */
@@ -84,6 +84,7 @@
   padding: 12px 23px;
   background-color: $ladresse;
   color: white;
+  font-size: 14px;
 }
 
 .button-banner:hover {
