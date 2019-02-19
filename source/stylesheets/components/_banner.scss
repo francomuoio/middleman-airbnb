@@ -1,4 +1,4 @@
-.banner {
+.banner-cautioneo {
   background: $blue;
   color: white;
   text-align: left;
@@ -38,8 +38,8 @@
 
 
 @media screen and (max-width: 900px) {
-  .banner {
-    width: 100vh;
+  .banner-cautioneo {
+    height: 100vh;
   }
 }
 
