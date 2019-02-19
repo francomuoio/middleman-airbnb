@@ -198,3 +198,9 @@
 .slider {
   width: 100%;
 }
+
+@media screen and ( max-height: 699px ) {
+  .padding-top {
+    margin-top: 20px;
+  }
+}

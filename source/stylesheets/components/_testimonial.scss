@@ -36,7 +36,10 @@ text-decoration: underline;
 .testimonial-quote {
   font-style: italic;
 }
-// .testimonial-quote {
-//   font-size: 20px!important;
-// }
 
+
+@media screen and ( max-height: 699px ) {
+  .président {
+    height: 200px;
+  }
+}
