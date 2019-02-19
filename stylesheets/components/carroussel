@@ -5,7 +5,7 @@ Error: Undefined variable: "$ladresse".
 187: .slick-arrow.slick-hidden {
 188:     display: none;
 189: }
-190: .slide h3{
+190: .slide h3 {
 191:   text-align: center;
 192:   color: $ladresse;
 193:   font-size: 20px;
@@ -144,4 +144,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ladresse\".\A         on line 192 of /Users/francomuoio/code/francomuoio/middleman-airbnb/source/stylesheets/components/carroussel.scss\A \A 187: .slick-arrow.slick-hidden {\A 188:     display: none;\A 189: }\A 190: .slide h3{\A 191:   text-align: center;\A 192:   color: $ladresse;\A 193:   font-size: 20px;\A 194:   font-weight: 350!important;\A 195:   min-width: 170px;\A 196: }\A 197: "; }
+  content: "Error: Undefined variable: \"$ladresse\".\A         on line 192 of /Users/francomuoio/code/francomuoio/middleman-airbnb/source/stylesheets/components/carroussel.scss\A \A 187: .slick-arrow.slick-hidden {\A 188:     display: none;\A 189: }\A 190: .slide h3 {\A 191:   text-align: center;\A 192:   color: $ladresse;\A 193:   font-size: 20px;\A 194:   font-weight: 350!important;\A 195:   min-width: 170px;\A 196: }\A 197: "; }
