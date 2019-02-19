@@ -8,3 +8,11 @@
 .explication-kit {
   margin-top: 5%;
 }
+
+@media screen and ( max-height: 699px ) {
+
+
+  .image-kit {
+    height: 300px;
+  }
+}

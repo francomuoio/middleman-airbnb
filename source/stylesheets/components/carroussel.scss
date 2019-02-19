@@ -187,7 +187,7 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-.slide h3{
+.slide h3 {
   text-align: center;
   color: $ladresse;
   font-size: 20px;
@@ -202,5 +202,8 @@
 @media screen and ( max-height: 699px ) {
   .padding-top {
     margin-top: 20px;
+  }
+  .slide h3 {
+  min-width: 160px;
   }
 }
